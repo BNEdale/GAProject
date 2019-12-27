@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Sublime Exercises</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="siteWrapper">
+        <h1>Monk's Cafe</h1>
+
+        <h2>"The Coffee Shop"</h2>
+
+        <div id="heroBanner">
+            <img class="bannerImage" src="toms-restaurant.jpg">
+        </div>
+
+        <div id="reservationsWrapper">
+
+            <div id="makeReservation" class="column">
+                <form>
+                    <h3>Make a Reservation</h3>
+                    <div class="row">
+                        <div class="col-35">
+                            <b>Name:</b>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" placeholder="Your name">
+                        </div>
+                        <div class="row">
+                            <div class="col-35">
+                                <b>Day:</b>
+                            </div>
+                            <div class="col-75">
+                                <input type="text" placeholder="Choose your day">
+                            </div>
+                        </div>
+                        <div class="row button col-75">
+                            <button>Confirm Reservation</button>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+
+            <div id="existingReservation" class="column">
+
+                <h3>Existing Reservations</h3>
+
+                <div class="row">
+
+                    <table class="resTable">
+                        <thead>
+                            <th>Name</th>
+                            <th>Day</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Dale C</td>
+                                <td>Tuesday</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div id="mapWrapper">
+            <h3>Come Dine With Us</h3>
+
+            <div id="mapLocation" style="height:100vh"></div>
+
+        </div>
+
+        <div id="reviewsWrapper">
+            <div class="row">
+                <h3>Customer Reviews</h3>
+                <div class="col-45">
+                    <p class="reviewsText">“Big lettuce, big carrots, tomatoes like volleyballs.”
+                        — <b>Jerry Seinfeld, on The BIG Salad</b></p>
+                </div>
+                <div class="col-45">
+                    <p><img class="reviewImg" src="jerry.jpg"></p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <script src="js/main.js"></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAuIiIPQssBL5Sc9j-AHcCzrEzPpzyImFg&callback=initMap" type="text/javascript"></script>
+
+</body></html>
